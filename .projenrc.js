@@ -25,7 +25,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   ],
   authorOrganization: true,
   repositoryUrl: 'https://github.com/aws-amplify/amplify-cli-export-construct.git',
-  packageManager: javascript.NodePackageManager.NPM,
+  packageManager: javascript.NodePackageManager.YARN,
   // publishToNuget: {
   //   dotNetNamespace: 'Amazon.Amplify.CDK',
   //   packageId: 'Exportedbackend',
@@ -181,7 +181,6 @@ fs.writeFileSync('./.github/workflows/integration-test.yml', stringify({
     },
   },
 }));
-
 
 // const publishJobs = project.deps = ( s) => {
 //   console.log(s);
